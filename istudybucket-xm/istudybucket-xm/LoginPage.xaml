@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="istudybucket_xm.LoginPage">
+    <ContentPage.Resources>
+        <StyleSheet Source="../Styles/login.css"></StyleSheet>
+    </ContentPage.Resources>
+    <ContentPage.Content
+        >
+        <StackLayout VerticalOptions="Fill" StyleClass="form-body" BackgroundColor="#880eff">
+            <StackLayout >
+            </StackLayout>
+            <!-- username field -->
+            <StackLayout StyleClass="form-field">
+                <Label Text="Username"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand" />
+                <Entry x:Name="EntryUsername" Text="" Placeholder="Ex. johndoe"></Entry>
+            </StackLayout>
+            
+            <!-- password field -->
+            <StackLayout StyleClass="form-field">
+                <Label Text="Password"
+                       VerticalOptions="CenterAndExpand"
+                       HorizontalOptions="CenterAndExpand" />
+                <Entry x:Name="EntryPassword" Text="" Placeholder="" ></Entry>
+            </StackLayout>
+            
+            <!-- sign in button field -->
+            <StackLayout StyleClass="form-field">
+                <Button x:Name="ButtonSignIn" Text="Sign In" Clicked="OnSignInClicked" StyleClass="form-btn"></Button>
+            </StackLayout>
+        </StackLayout>
+        
+    </ContentPage.Content>
+</ContentPage>
