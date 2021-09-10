@@ -42,8 +42,12 @@
         <Reference Include="Mono.Android" />
         <Reference Include="System" />
         <Reference Include="System.Core" />
-        <Reference Include="System.Xml.Linq" />
-        <Reference Include="System.Xml" />
+        <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\.nuget\packages\xamarin.forms\4.4.0.991640\lib\netstandard2.0\Xamarin.Forms.Core.dll</HintPath>
+        </Reference>
+        <Reference Include="Xamarin.Forms.Platform, Version=2.0.0.0, Culture=neutral, PublicKeyToken=null">
+          <HintPath>..\..\..\..\.nuget\packages\xamarin.forms\4.4.0.991640\lib\netstandard2.0\Xamarin.Forms.Platform.dll</HintPath>
+        </Reference>
     </ItemGroup>
     <ItemGroup>
         <PackageReference Include="Xamarin.Forms" Version="4.4.0.991640" />
@@ -73,10 +77,6 @@
         <ProjectReference Include="..\istudybucket-xm\istudybucket-xm.csproj">
           <Project>{5d00d90d-3fe0-4d94-bf47-57e719eed597}</Project>
           <Name>istudybucket-xm</Name>
-        </ProjectReference>
-        <ProjectReference Include="..\istudybucket_xm\istudybucket_xm.csproj">
-            <Project>{8F6490EC-F625-4B25-8718-1ABE6FD1557A}</Project>
-            <Name>istudybucket_xm</Name>
         </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
