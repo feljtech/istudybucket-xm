@@ -12,7 +12,8 @@ namespace istudybucket_xm
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            // MainPage = new MainPage();
+            MainPage = new LoginPage();
         }
 
         protected override void OnStart()
