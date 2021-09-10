@@ -1,0 +1,17 @@
+﻿
+.form-body {
+    height: 100%;
+    padding: 64px 16px;
+    background-color: #880eff;
+    color: #fff;
+}
+
+.form-field {
+    margin: 4px 0;
+}
+
+.form-btn {
+    background-color: azure;
+    border-color: #880eff;
+    border-width: 1px;
+}
