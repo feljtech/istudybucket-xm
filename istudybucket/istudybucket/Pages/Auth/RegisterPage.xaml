@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="istudybucket.Pages.Auth.RegisterPage">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <!-- register title -->
+            <StackLayout VerticalOptions="FillAndExpand"
+                         Margin="32">
+                <StackLayout VerticalOptions="Center"
+                             HorizontalOptions="CenterAndExpand">
+                    <Label Text="Register" FontSize="Large"></Label>
+                    <Label Text="Enter your details to create an account." FontSize="Medium"></Label>
+                </StackLayout>
+            </StackLayout>
+            
+            <!-- register form -->
+            <StackLayout VerticalOptions="FillAndExpand"
+                         Margin="32">
+                <!-- username container -->
+                <StackLayout VerticalOptions="Center"
+                             HorizontalOptions="Fill">
+                    <Entry x:Name="UsernameEntry"
+                           Placeholder="Username"
+                           MaxLength="50"
+                           Keyboard="Text"
+                           ReturnType="Next"></Entry>
+                </StackLayout>
+                    <!-- email container -->
+                <StackLayout VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="Fill">
+                    <Entry x:Name="EmailEntry" 
+                           Placeholder="Email"
+                           MaxLength="50"
+                           Keyboard="Email"
+                           ReturnType="Next"></Entry>
+                </StackLayout>
+                    <!-- password container -->
+                <StackLayout VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="Fill">
+                    <Entry x:Name="PasswordEntry" 
+                           Placeholder="Password"
+                           IsPassword="True"
+                           Keyboard="Text"
+                           ReturnType="Send"></Entry>
+                </StackLayout>
+                    <!-- register button -->
+                <StackLayout VerticalOptions="CenterAndExpand"
+                             HorizontalOptions="Fill"
+                             Margin="12">
+                    <Button x:Name="RegisterButton" 
+                            Text="Register" 
+                            Clicked="RegisterButton_OnClicked"
+                            TextColor="White"
+                            BackgroundColor="#880eff"></Button>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
